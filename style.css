@@ -1,0 +1,60 @@
+/* Reset & Base */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #2e2d2e; background-color: #fae4d2; }
+
+/* Header */
+header { background: #d60e28; color: #fff; padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; }
+header nav { display: flex; justify-content: space-between; align-items: center; }
+header nav ul { list-style: none; display: flex; gap: 1rem; }
+header nav ul li a { color: #fff; font-weight: bold; }
+header nav ul li a:hover { text-decoration: underline; }
+.menu-toggle { display: none; cursor: pointer; }
+
+/* Hero */
+#hero { background: url('images/cafe-hero.jpg') center/cover no-repeat; color: #d60e28; text-align: center; padding: 6rem 2rem; }
+#hero .btn { display: inline-block; padding: 0.7rem 1.5rem; background: #d60e28; color: #fff; margin-top: 1rem; border-radius: 5px; }
+#hero .btn:hover { background: #ff4500; }
+
+/* Menu */
+.menu-buttons { text-align: center; margin-bottom: 2rem; }
+.menu-buttons button { padding: 0.5rem 1rem; margin: 0.3rem; border: none; background: #d60e28; color: #fff; font-weight: bold; cursor: pointer; border-radius: 5px; }
+.menu-buttons button:hover { background: #d60e28; }
+
+.menu-section { background: #d60e28; padding: 2rem; margin-bottom: 1rem; border-radius: 10px; box-shadow: 0 4px 8px rgb(41, 38, 38); }
+.menu-section h3 { color: #fff; margin-bottom: 0.5rem; }
+.menu-section ul { list-style: none; padding-left: 0; }
+.menu-section ul li { padding: 0.4rem 0; border-bottom: 1px solid #fff; }
+
+/* Events */
+.events-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 2rem; }
+.event-item { background: #ffe4b5; padding: 1.5rem; border-radius: 8px; text-align: center; transition: transform 0.3s; }
+.event-item:hover { transform: scale(1.05); }
+
+/* Instagram */
+#instagram { text-align: center; margin: 2rem 0; }
+
+/* Contact */
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
+.contact-info p { margin-bottom: 0.5rem; }
+form input, form textarea { width: 100%; padding: 0.5rem; margin-bottom: 1rem; border-radius: 5px; border: 1px solid #ccc; }
+form button { background: #ff6347; color: #fff; border: none; padding: 0.7rem 1rem; cursor: pointer; border-radius: 5px; }
+form button:hover { background: #ff4500; }
+#hours { padding: 2rem; background:#fae4d2; border-radius: 10px; margin-bottom: 2rem; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+#hours h2 { color: #ff6347; margin-bottom: 1rem; }
+#hours p { font-size: 1.2rem; font-weight: bold; color: #333; }
+#hours button { background: #d60e28; color: #fff; border: none; padding: 0.5rem 1rem; margin: 1rem 0; cursor: pointer; border-radius: 5px; }
+#hours button:hover { background: #ff6347; }
+#hours ul { list-style: none; padding-left: 0; margin-top: 1rem; }
+#hours ul li { padding: 0.3rem 0; border-bottom: 1px solid #f3e5e7; }
+
+
+/* Footer */
+footer { text-align: center; padding: 1rem; background: #ff7f50; color: #fff; }
+
+/* Responsive */
+@media(max-width:768px){
+    .contact-grid { grid-template-columns: 1fr; }
+    header nav ul { display: none; flex-direction: column; background: #d60e28; position: absolute; top: 60px; right: 0; width: 100%; }
+    header nav ul.show { display: flex; }
+    .menu-toggle { display: block; color: #fff; }
+}
