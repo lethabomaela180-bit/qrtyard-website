@@ -18,25 +18,35 @@ form.addEventListener('submit', (e) => {
 });
 // Hours data
 const hours = {
+    Monday: "8 am–4:30 pm",
+    Tuesday: "6 am–3 pm",
+    Wednesday: "8 am–4:30 pm",
     Thursday: "8 am–4:30 pm",
     Friday: "8 am–4:30 pm",
     Saturday: "7 am–4:30 pm",
-    Sunday: "7:30 am–3:30 pm",
-    Monday: "8 am–4:30 pm",
-    Tuesday: "6 am–3 pm",
-    Wednesday: "8 am–4:30 pm"
+    Sunday: "7:30 am–3:30 pm"
 };
+
+const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+]
 
 // Display today's hours
 function showTodayHours() {
-    const today = new Date();
-    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const dayName = days[today.getDay()];
-    document.getElementById("today-hours").innerText = hours[dayName];
+  const today = new Date();
+  const dayName = days[today.getDay()];
+
+  document.getElementById("today-hours").innerText =
+    dayName + ": " + hours[dayName];
 }
 
 showTodayHours();
-
 // Toggle all hours
 const showAllBtn = document.getElementById("show-all-hours-btn");
 const allHoursDiv = document.getElementById("all-hours");
