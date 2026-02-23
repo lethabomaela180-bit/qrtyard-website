@@ -3,18 +3,16 @@
 body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; background-color: #fae4d2; }
 
 /* Menu Section */
-#menu { 
-    background: #131111;
-    color: #ffffff;
+ #menu {
+    color:#ccc
  }
-
  #menu h2 {
-    color: #ffffff;
+    color: #000000;
  }
 
 
 /* Header */
-header { background: #131112; color: #fff; padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; }
+header { background: #d60e28; color: #fff; padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; }
 header nav { display: flex; justify-content: space-between; align-items: center; }
 header nav ul { list-style: none; display: flex; gap: 1rem; }
 header nav ul li a { color: #fff; font-weight: bold; }
@@ -51,15 +49,15 @@ header nav ul li a:hover { text-decoration: underline; }
 
 /* Hero */
 #hero { background: url('images/cafe-hero.jpg') center/cover no-repeat; color: #131011; text-align: center; padding: 6rem 2rem; }
-#hero .btn { display: inline-block; padding: 0.7rem 1.5rem; background: #131112; color: #fff; margin-top: 1rem; border-radius: 5px; }
+#hero .btn { display: inline-block; padding: 0.7rem 1.5rem; background: #d60e28; color: #fff; margin-top: 1rem; border-radius: 5px; }
 #hero .btn:hover { background: #131011; }
 
 /* Menu */
 .menu-buttons { text-align: center; margin-bottom: 2rem; }
-.menu-buttons button { padding: 0.5em 1rem; margin: 0.3rem; border: none; background: #131011; color: #fff; font-weight: bold; cursor: pointer; border-radius: 10px; }
+.menu-buttons button { padding: 0.5em 1rem; margin: 0.3rem; border: none; background: #d60e28; color: #fff; font-weight: bold; cursor: pointer; border-radius: 10px; }
 .menu-buttons button:hover { background: #d60e28; }
 
-.menu-section { background: #131011; padding: 2rem; margin-bottom: 1rem; box-shadow: 0 4px 8px rgb(238, 238, 238); }
+.menu-section { background: #d60e28; padding: 2rem; margin-bottom: 1rem; box-shadow: 0 4px 8px rgb(238, 238, 238); }
 .menu-section ul { list-style: none; padding-left: 0; }
 
 /* Events */
@@ -88,19 +86,19 @@ header nav ul li a:hover { text-decoration: underline; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; }
 .contact-info p { margin-bottom: 0.5rem; }
 form input, form textarea { width: 100%; padding: 0.5rem; margin-bottom: 1rem; border-radius: 5px; border: 1px solid #ccc; }
-form button { background: #000000; color: #fff; border: none; padding: 0.7rem 1rem; cursor: pointer; border-radius: 5px; }
+form button { background: #d60e28; color: #fff; border: none; padding: 0.7rem 1rem; cursor: pointer; border-radius: 5px; }
 form button:hover { background: #000000; }
 #hours { padding: 2rem; background:#fae4d2; border-radius: 10px; margin-bottom: 2rem; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
 #hours h2 { color: #ff6347; margin-bottom: 1rem; }
 #hours p { font-size: 1.2rem; font-weight: bold; color: #333; }
-#hours button { background: #000000; color: #fff; border: none; padding: 0.5rem 1rem; margin: 1rem 0; cursor: pointer; border-radius: 5px; }
+#hours button { background: #d60e28; color: #fff; border: none; padding: 0.5rem 1rem; margin: 1rem 0; cursor: pointer; border-radius: 5px; }
 #hours button:hover { background: #000000; }
 #hours ul { list-style: none; padding-left: 0; margin-top: 1rem; }
 #hours ul li { padding: 0.3rem 0; border-bottom: 1px solid #f3e5e7; }
 
 
 /* Footer */
-footer { text-align: center; padding: 1rem; background: #131111; color: #fff; }
+footer { text-align: center; padding: 1rem; background: #d60e28; color: #fff; }
 
 /* Responsive */
 @media(max-width:768px){
