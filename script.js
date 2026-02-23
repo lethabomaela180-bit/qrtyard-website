@@ -6,6 +6,20 @@ menuToggle.addEventListener('click', () => {
     navUl.classList.toggle('show');
 });
 
+const toggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+toggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+// Close menu when clicking a link
+document.querySelectorAll("#nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+  });
+});
+
 // Smooth scroll for menu buttons
 function scrollToSection(sectionId){
     document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
